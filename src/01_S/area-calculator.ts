@@ -6,7 +6,7 @@ type ShapeProps = {
 }
 
 class AreaCalculator {
-  private readonly shapes
+  private readonly shapes: ShapeProps[]
 
   constructor (shapes: Array<Square | Circle>) {
     this.shapes = shapes
@@ -18,7 +18,6 @@ class AreaCalculator {
       areaShapes += shape.getArea()
     })
     return `Sum of all areas are ${areaShapes}`
-
   }
 }
 
