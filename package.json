@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +26,7 @@
     "jest": "^26.4.0",
     "lint-staged": "^10.2.11",
     "ts-jest": "^26.3.0",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^3.9.7"
   }
 }
