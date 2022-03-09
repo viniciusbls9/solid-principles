@@ -1,0 +1,7 @@
+{
+  "extends": "standard-with-typescript",
+  "checkCompoundAssignments": true, 
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
