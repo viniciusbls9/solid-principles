@@ -1,5 +1,5 @@
-import Square from './square'
-import Circle from './circle'
+import Square from '../Square/square'
+import Circle from '../Circle/circle'
 
 type ShapeProps = {
   getArea(): number
@@ -12,12 +12,12 @@ class AreaCalculator {
     this.shapes = shapes
   }
 
-  sum (): string {
+  sum (): number {
     let areaShapes = 0
     this.shapes.forEach((shape: ShapeProps) => {
       areaShapes += shape.getArea()
     })
-    return `Sum of all areas are ${areaShapes}`
+    return areaShapes
   }
 }
 
