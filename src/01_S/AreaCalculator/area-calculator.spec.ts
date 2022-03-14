@@ -1,5 +1,5 @@
-import Circle from "01_S/Circle/circle";
-import Square from "01_S/Square/square";
+import Circle from '../../01_S/Circle/circle';
+import Square from '../../01_S/Square/square';
 import AreaCalculator from "./area-calculator";
 
 describe('AreaCalculator Class', () => {
