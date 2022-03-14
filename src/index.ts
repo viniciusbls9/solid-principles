@@ -1,6 +1,6 @@
-import AreaCalculator from './01_S/area-calculator';
-import Square from './01_S/square';
-import Circle from './01_S/circle';
+import AreaCalculator from './01_S/AreaCalculator/area-calculator';
+import Square from './01_S/Square/square';
+import Circle from './01_S/Circle/circle';
 
 (() => {
   const square = new Square(2);
