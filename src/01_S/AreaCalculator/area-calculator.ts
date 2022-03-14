@@ -1,24 +1,19 @@
-import Square from '../Square/square'
-import Circle from '../Circle/circle'
-
-type ShapeProps = {
-  getArea(): number
-}
+import { ShapesInterface } from 'models/shapesInterface'
 
 class AreaCalculator {
-  private readonly shapes: ShapeProps[]
+  private readonly shapes;
 
-  constructor (shapes: Array<Square | Circle>) {
-    this.shapes = shapes
+  constructor(shapes: ShapesInterface) {
+    this.shapes = shapes;
   }
 
-  sum (): number {
-    let areaShapes = 0
-    this.shapes.forEach((shape: ShapeProps) => {
-      areaShapes += shape.getArea()
-    })
-    return areaShapes
+  sum(): number {
+    let areaShapes = 0;
+    this.shapes.forEach((shape) => {
+      areaShapes += shape.getArea();
+    });
+    return areaShapes;
   }
 }
 
-export default AreaCalculator
+export default AreaCalculator;
