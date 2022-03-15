@@ -4,6 +4,8 @@ import Circle from "./01_S/Circle/circle";
 import Triangle from "./02_O/Triangle/triangle";
 import VolumeCalculator from "./03_L/volume-calculator";
 import Cuboid from "./04_I/cuboid";
+import MysqlDb from "./05_D/mysql-db";
+import PostgresDb from "./05_D/postgres-db";
 
 (() => {
   const square = new Square(2);
@@ -30,4 +32,8 @@ import Cuboid from "./04_I/cuboid";
     cuboid,
   ]);
   console.log("04_I principle: ", principle_04_sample.sum());
+
+  const mySqlDb = new MysqlDb();
+  const postgresDb = new PostgresDb();
+  console.log("05_D principle: ", mySqlDb.connect(), postgresDb.connect());
 })();
